@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, uc-fitscreen=yes, user-scalable=0;" name="viewport" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script language="javascript" src="js/jquery.min.js" type="text/javascript" ></script>
+	
+<title></title>
+</head>
+
+<body>
+	<div class="wrap">
+   
+	<header><img src="images/logo.png"></header>
+    <div class="star"><img src="images/star.png"></div>
+    <div class="c_qiubg imgbox"></div>
+    	<div class="maxBox">
+   		 <img src="images/fire.png" class="rocket">
+         <img src="images/fire_03.png" class="hdong">
+         </div>
+         <div class="energy">
+         	<span></span>
+         </div>
+         <div class="blood">
+         <span></span><p>　X5</p>
+         </div>
+         <div class="srollbar"><i></i><em> </em></div>
+         <div class="addfire" onselectstart="return false"></div>
+        
+         <p class="tap">按住蓄力，松开后点击发射</p>
+         
+         
+         <!--共飞行距离弹框1-->
+         <div class="alert alert1">
+         	<p>火箭飞行了<span>xxxKM</span>，一共飞行了<span>xxxKM</span>，剩余可用xxKM。</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            
+            <a class="onlyone">再来一次</a>
+         </div>
+         <!--共飞行距离弹框2-->
+         <div class="alert alert2">
+         	<p>火箭飞行了<span>xxxKM</span>，一共飞行了<span>xxxKM</span>。剩余可用xxKM，您可以去兑换<span>x元</span>话费红包了
+</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            <div class="btnlist cf">
+            <a class="onlyl">再来一次</a>
+            <a class="onlyr">去兑换</a>
+            </div>
+         </div>
+          <!--共飞行距离弹框3-->
+         <div class="alert alert3">
+         	<p><span>很遗憾，您没有助推器了</span>，分享给好友，好友点击分享链接就可以助您获得助推器了~
+
+</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            <a class="onlyone">去分享</a>
+         </div>
+          <!--共飞行距离弹框4-->
+         <div class="alert alert4">
+         	<p class="ac"><span>成功领取了一个助推器！</span></p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            <a class="onlyone">继续领取</a>
+         </div>
+          <!--共飞行距离弹框5-->
+         <div class="alert alert5">
+         	<p>每天最多领取<span>5个</span>助推器，明天再来领吧~
+</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            <a class="onlyone">继续领取</a>
+         </div>
+         <!--共飞行距离弹框6-->
+         <div class="alert alert6">
+         	<p>兑换前请先使用<span>K宝</span>或<span>K令</span>支付0.1元</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            <div class="btnlist cf">
+            <a class="onlyl">再来一次</a>
+            <a class="onlyr">去兑换</a>
+            </div>
+         </div>
+         <!--共飞行距离弹框7-->
+         <div class="alert alert7">
+         	<p class="ac title">请完善您的信息，以便奖品正常派送</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            <input type="text" placeholder="姓名"/>
+            <input type="number" placeholder="手机号码"/>
+            <textarea placeholder="收货地址"></textarea>
+            <a class="onlyone">提交信息</a>
+         </div>
+          <!--共飞行距离弹框8-->
+         <div class="alert alert8">
+         	<p class="ac title">请完善您的信息，以便奖品正常派送</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+            <input type="text" placeholder="姓名"/>
+            <input type="number" placeholder="手机号码"/>
+           
+            <a class="onlyone">提交信息</a>
+         </div>
+         <!--共飞行距离弹框9-->
+         <div class="alert alert9">
+         	<img src="images/ok.png" class="ok">
+         	<p style="padding:10px">您的信息已提交成功，工作人员稍后会与您取得联系。</p>
+            <div class="icon_logo"><img src="images/logo_03.png"></div>
+           
+           
+            <a class="onlyone">提交信息</a>
+         </div>
+         <!--share-->
+         <div class="share" style="display:block"><img src="images/share.png"></div>
+         
+         
+         
+         
+        
+         
+         
+     <footer><a href="">首页</a>　|　<a>活动规则</a>　|　<a>飞行榜</a>　|　<a>助力榜</a>　|　<a> 红包中心</a></footer>
+     
+     
+    </div>
+    <div id="mask"></div>
+
+</body>
+<script>
+$(function(){var str="";for(var q=0;q<7;q++){str+='<span class="red red'+q+'"></span>'}$(".wrap").append(str)});var i=0;var timelong="";function getHeight(){$("body").height($(window).height());$(".addfire").height($(".addfire").width());$(".addfire").css("line-height",$(".addfire").width()+"px")}var preventDefault=function(e){e.preventDefault()};getHeight();var timer="";$(window).resize(function(){getHeight()});$(".addfire").on("mousedown mousemove mouseup touchstart touchmove touchend",function(e){switch(e.type){case"mousedown":case"touchstart":e.preventDefault();if($(".addfire").hasClass("addHfire")){$("header").animate({opacity:"0"},300);$(".c_qiubg").addClass("addnimation");setTimeout(function(){$(".hdong").removeClass("fireScale");$(".hdong").addClass("downFair");setTimeout(function(){$(".hdong").addClass("downFairs")},200);setTimeout(function(){var height=$(".alert8").outerHeight();var windowheight=$(window).innerHeight();$(".c_qiubg").removeClass("addnimation");$(".alert8").css("top",$(window).scrollTop()+(windowheight/2)-(height/2));$(".alert8,#mask").show()},400)},timelong)}else{$(".srollbar i").addClass("domove");$(".energy span").addClass("addHeight add");$(".hdong").addClass("fireScale");$(".red").fadeOut()}break;case"mouseup":case"touchend":$(document).off("touchmove",preventDefault);up();break}});function up(){$(".energy span").css("height",$(".energy span").height());var longtime=$(".energy span").height()/80*100;if(longtime<33.33){timelong=2000}else{if(longtime<66.66){timelong=4000}else{timelong=6000}}clearTimeout(timer);$(".energy span").removeClass("add");$(".addfire").addClass("addHfire");$(".srollbar i").css("left",$(".srollbar i").position().left);$(".srollbar i").removeClass("domove")};
+</script>
+</html>

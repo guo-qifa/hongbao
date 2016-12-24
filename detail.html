@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, uc-fitscreen=yes, user-scalable=0;" name="viewport" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script language="javascript" src="js/jquery.min.js" type="text/javascript" ></script>
+	
+<title></title>
+</head>
+
+<body>
+	<div class="wrap index">
+   	<img src="images/header.png">
+	<div class="main_content">
+    		<h2 class="tm">飞行榜细则</h2>
+            <p>
+           　　活动期间用户通过飞行距离进行排名，活动结束后，飞行距离排名前10的微信用户，均可获得排名奖，奖品如下<br> 
+第一名：iphone6一台<br>
+第二名：ipad mini3一台<br>
+第三名：kindle一台<br>
+第4~10名：300元话费<br>
+ 
+前10名的用户排名均按照飞行距离进行排名，如遇距离相同的情况，则按照先到达排名距离的用户排在前位的原则执行。如果用户发现自己的飞行距离与前一名的相同，那么就是系统判定该用户到达此距离的时间比前一名的时间晚。2015年3月15日24:00系统将公布前10名获奖用户名单，中奖用户可在活动“红包中心”中查询、领取。<br>
+ 
+注明：如出现用户使用非正常手段获取奖励以及排名，主办方有权对其进行活动封号处理，用户自身出现的损失，主办方不承担任何责任；<br>
+ 
+</p>
+    </div>
+     <footer><a href="">首页</a>　|　<a class="current">活动规则</a>　|　<a>飞行榜</a>　|　<a>助力榜</a>　|　<a> 红包中心</a></footer>
+      </div>
+  
+</body>
+<script>
+
+window.onload=function(){
+var per=568*$(window).width()/320;
+
+$(".wrap").css("min-height",per);
+if($(window).width()>640){
+		$(".wrap").css("min-height",1136);
+}
+
+}
+$("footer").css({"bottom":"0","position":"absolute","width":"100%"});
+</script>
+</html>
